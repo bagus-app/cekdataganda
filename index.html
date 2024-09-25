@@ -1,50 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Perbandingan Data</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perbandingan Data </title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>CEK DATA GANDA</h1>
+            </header>
 
-<body>
-    <div class="container">
-        <header>
-            <h1>CEK DATA GANDA</h1>
-        </header>
+            <section class="input-section">
+                <textarea
+                    id="data1"
+                    placeholder="Masukkan Data 1/Pastekan data dari excel"
+                ></textarea>
+                <textarea
+                    id="data2"
+                    placeholder="Masukkan Data 2/Pastekan data dari excel"
+                ></textarea>
+                <div class="buttons">
+                    <button id="process">Proses Data</button>
+                    <button id="clearButton">Bersihkan Data</button>
+                </div>
+            </section>
 
-        <section class="input-section">
-            <textarea id="data1" placeholder="Masukkan Data 1/Pastekan data dari excel"></textarea>
-            <textarea id="data2" placeholder="Masukkan Data 2/Pastekan data dari excel"></textarea>
-            <div class="buttons">
-                <button id="process">Proses Data</button>
-                <button id="clearButton">Bersihkan Data</button>
-            </div>
-        </section>
+            <!-- Spinner Loading -->
+            <div id="loadingSpinner" class="spinner hidden"></div>
 
-        <!-- Spinner Loading -->
-        <div id="loadingSpinner" class="spinner hidden"></div>
+            <section class="results">
+                <div id="summary"></div>
+                <div id="differences"></div>
+            </section>
 
-        <section class="results">
-            <div id="summary"></div>
-            <div id="differences"></div>
-        </section>
+            <footer>
+                <div class="footer-container">
+                    <p>&copy; 2024 B4GUS SOFTWARE.</p>
+                    <a
+                        href="https://www.instagram.com/bagus.candra"
+                        target="_blank"
+                    >
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                            alt="Instagram Logo"
+                            width="30"
+                        />
+                        @bagus.candra
+                    </a>
+                </div>
+            </footer>
+        </div>
 
-        <footer>
-            <div class="footer-container">
-                <p>&copy; 2024 B4GUS SOFTWARE. Semua Hak Dilindungi.</p>
-                <a href="https://www.instagram.com/bagus.candra" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-                        alt="Instagram Logo" width="30">
-                    @bagus.candra
-                </a>
-            </div>
-        </footer>
-
-    </div>
-
-    <script src="script.js"></script>
-</body>
-
+        <script src="script.js"></script>
+    </body>
 </html>
